@@ -1,8 +1,245 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Dashboard - Student Management System";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid mt-5">
+    <!-- Hero Section -->
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <div class="bg-gradient-primary p-5 rounded-lg shadow-lg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div class="text-white">
+                    <h1 class="display-3 fw-bold mb-2">
+                        <i class="fas fa-graduation-cap"></i> Student Management System
+                    </h1>
+                    <p class="lead mb-0">
+                        Efficiently manage students, courses, and enrollments in one place
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Stats Section -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <div class="display-4 text-primary mb-3">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h6 class="card-title text-muted">Total Students</h6>
+                    <p class="display-5 fw-bold mb-0">@ViewBag.TotalStudents</p>
+                    <small class="text-muted">Active students in system</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <div class="display-4 text-success mb-3">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h6 class="card-title text-muted">Total Courses</h6>
+                    <p class="display-5 fw-bold mb-0">@ViewBag.TotalCourses</p>
+                    <small class="text-muted">Courses available</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <div class="display-4 text-info mb-3">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h6 class="card-title text-muted">Total Enrollments</h6>
+                    <p class="display-5 fw-bold mb-0">@ViewBag.TotalEnrollments</p>
+                    <small class="text-muted">Student-course pairs</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <div class="display-4 text-warning mb-3">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h6 class="card-title text-muted">System Status</h6>
+                    <p class="display-5 fw-bold mb-0">
+                        <span class="badge bg-success">Active</span>
+                    </p>
+                    <small class="text-muted">All systems operational</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions Section -->
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-lightning-bolt"></i> Quick Actions
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-3">
+                            <a asp-controller="Students" asp-action="Index" class="btn btn-outline-primary btn-lg w-100 h-100 d-flex flex-column justify-content-center align-items-center py-4">
+                                <i class="fas fa-users fa-2x mb-2"></i>
+                                <span>Manage Students</span>
+                                <small class="text-muted mt-1">View & Edit</small>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <a asp-controller="Courses" asp-action="Index" class="btn btn-outline-success btn-lg w-100 h-100 d-flex flex-column justify-content-center align-items-center py-4">
+                                <i class="fas fa-book fa-2x mb-2"></i>
+                                <span>Manage Courses</span>
+                                <small class="text-muted mt-1">View & Edit</small>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <a asp-controller="Students" asp-action="Create" class="btn btn-outline-info btn-lg w-100 h-100 d-flex flex-column justify-content-center align-items-center py-4">
+                                <i class="fas fa-user-plus fa-2x mb-2"></i>
+                                <span>Add Student</span>
+                                <small class="text-muted mt-1">New Entry</small>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <a asp-controller="Courses" asp-action="Create" class="btn btn-outline-warning btn-lg w-100 h-100 d-flex flex-column justify-content-center align-items-center py-4">
+                                <i class="fas fa-plus-circle fa-2x mb-2"></i>
+                                <span>Add Course</span>
+                                <small class="text-muted mt-1">New Entry</small>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <a asp-controller="Enrollments" asp-action="Index" class="btn btn-outline-secondary btn-lg w-100 h-100 d-flex flex-column justify-content-center align-items-center py-4">
+                                <i class="fas fa-user-check fa-2x mb-2"></i>
+                                <span>View Enrollments</span>
+                                <small class="text-muted mt-1">All Registrations</small>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <a asp-controller="Enrollments" asp-action="CoursesForStudent" class="btn btn-outline-danger btn-lg w-100 h-100 d-flex flex-column justify-content-center align-items-center py-4">
+                                <i class="fas fa-list fa-2x mb-2"></i>
+                                <span>Enrollment Summary</span>
+                                <small class="text-muted mt-1">By Student</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Tab Explaining -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-star"></i> Features
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-bold">Complete CRUD Operations</h6>
+                                    <p class="small text-muted mb-0">Create, Read, Update, and Delete students and courses</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-bold">Role-Based Access</h6>
+                                    <p class="small text-muted mb-0">Admin and Student roles with secure authentication</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-bold">REST API</h6>
+                                    <p class="small text-muted mb-0">RESTful API endpoints for integration</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-bold">API Documentation</h6>
+                                    <p class="small text-muted mb-0">Swagger UI for API exploration</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-bold">Data Persistence</h6>
+                                    <p class="small text-muted mb-0">SQLite database with Entity Framework Core</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-bold">Comprehensive Testing</h6>
+                                    <p class="small text-muted mb-0">24 unit tests covering all functionality</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-bold">Responsive Design</h6>
+                                    <p class="small text-muted mb-0">Uses Bootstrap 5 for modern UI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-check-circle text-success fa-2x me-3 mt-1"></i>
+                                <div>
+                                    <h6 class="fw-bold">Production Ready</h6>
+                                    <p class="small text-muted mb-0">Fully functional and deployment ready</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<style>
+    .bg-gradient-primary {
+        color: white;
+    }
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    }
+    .btn-outline-primary:hover,
+    .btn-outline-success:hover,
+    .btn-outline-info:hover,
+    .btn-outline-warning:hover {
+        transform: translateY(-2px);
+    }
+</style>

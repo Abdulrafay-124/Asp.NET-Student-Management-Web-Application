@@ -18,7 +18,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 280px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -28,4 +29,223 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+
+/* Fix navbar spacing and overlapping */
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem !important;
+  white-space: nowrap;
+}
+
+/* Ensure main container has proper spacing */
+.container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Fix card spacing */
+.card {
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card-body {
+  padding: 1.5rem;
+  word-break: break-word;
+}
+
+/* Fix table text overflow */
+.table {
+  table-layout: auto;
+  word-break: break-word;
+}
+
+.table td, .table th {
+  padding: 0.75rem;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Fix button spacing in action columns */
+.btn-sm {
+  padding: 0.375rem 0.75rem;
+  margin: 0.25rem;
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
+
+/* Fix form spacing */
+.form-group,
+.mb-3 {
+  margin-bottom: 1rem !important;
+  clear: both;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #212529;
+  clear: both;
+}
+
+.form-control,
+.form-select {
+  display: block;
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  margin-top: 0.25rem;
+  clear: both;
+}
+
+/* Hero section spacing */
+.bg-gradient-primary {
+  padding: 2rem !important;
+  margin-bottom: 2rem !important;
+  border-radius: 0.5rem !important;
+  clear: both;
+}
+
+.bg-gradient-primary h1 {
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.bg-gradient-primary p {
+  margin: 0;
+  word-break: break-word;
+}
+
+/* Fix dashboard cards */
+.display-4,
+.display-5 {
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+/* Ensure proper footer spacing */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 1.5rem 0;
+  clear: both;
+  margin-top: 2rem;
+}
+
+/* Fix validation messages */
+.text-danger {
+  display: block;
+  clear: both;
+  margin-top: 0.25rem;
+}
+
+.invalid-feedback,
+.valid-feedback {
+  display: block;
+  clear: both;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* Ensure alert boxes don't overlap */
+.alert {
+  margin-bottom: 1rem;
+  clear: both;
+  word-break: break-word;
+}
+
+.alert ul {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+}
+
+.alert li {
+  margin-bottom: 0.5rem;
+}
+
+/* Fix badge spacing */
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  margin: 0.25rem;
+  word-break: break-word;
+}
+
+/* Table responsive fix */
+.table-responsive {
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+/* Ensure input groups don't overlap */
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Button group fix */
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  clear: both;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .d-md-flex {
+    display: flex !important;
+    gap: 0.5rem;
+  }
+}
+
+/* Fix flex containers */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+/* Ensure nav styling doesn't break responsiveness */
+@media (max-width: 576px) {
+  .navbar-collapse {
+    padding: 0.5rem 0;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.25rem 0 !important;
+  }
+  
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .d-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .table td, .table th {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
 }
