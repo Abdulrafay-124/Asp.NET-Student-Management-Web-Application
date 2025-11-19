@@ -397,3 +397,9 @@ D:\C# Projects\Final Project\StudentManagement\obj\Release\net9.0\refint\Student
 D:\C# Projects\Final Project\StudentManagement\obj\Release\net9.0\StudentManagement.pdb
 D:\C# Projects\Final Project\StudentManagement\obj\Release\net9.0\StudentManagement.genruntimeconfig.cache
 D:\C# Projects\Final Project\StudentManagement\obj\Release\net9.0\ref\StudentManagement.dll
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\web.config
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\appsettings.Development.json
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\appsettings.json
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\StudentManagement.deps.json
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\StudentManagement.runtimeconfig.json
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\StudentManagement.staticwebassets.endpoints.json
