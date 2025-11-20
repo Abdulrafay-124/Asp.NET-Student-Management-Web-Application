@@ -1,9 +1,15 @@
 D:\C# Projects\Final Project\StudentManagement\out\StudentManagement.exe
+D:\C# Projects\Final Project\StudentManagement\out\out\out\web.config
 D:\C# Projects\Final Project\StudentManagement\out\out\web.config
 D:\C# Projects\Final Project\StudentManagement\out\appsettings.Development.json
 D:\C# Projects\Final Project\StudentManagement\out\appsettings.json
 D:\C# Projects\Final Project\StudentManagement\out\out\appsettings.Development.json
 D:\C# Projects\Final Project\StudentManagement\out\out\appsettings.json
+D:\C# Projects\Final Project\StudentManagement\out\out\out\appsettings.Development.json
+D:\C# Projects\Final Project\StudentManagement\out\out\out\appsettings.json
+D:\C# Projects\Final Project\StudentManagement\out\out\out\StudentManagement.deps.json
+D:\C# Projects\Final Project\StudentManagement\out\out\out\StudentManagement.runtimeconfig.json
+D:\C# Projects\Final Project\StudentManagement\out\out\out\StudentManagement.staticwebassets.endpoints.json
 D:\C# Projects\Final Project\StudentManagement\out\out\StudentManagement.deps.json
 D:\C# Projects\Final Project\StudentManagement\out\out\StudentManagement.runtimeconfig.json
 D:\C# Projects\Final Project\StudentManagement\out\out\StudentManagement.staticwebassets.endpoints.json

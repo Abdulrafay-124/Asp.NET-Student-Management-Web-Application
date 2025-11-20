@@ -403,3 +403,9 @@ D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\appsetting
 D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\StudentManagement.deps.json
 D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\StudentManagement.runtimeconfig.json
 D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\StudentManagement.staticwebassets.endpoints.json
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\out\web.config
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\out\appsettings.Development.json
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\out\appsettings.json
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\out\StudentManagement.deps.json
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\out\StudentManagement.runtimeconfig.json
+D:\C# Projects\Final Project\StudentManagement\bin\Release\net9.0\out\out\StudentManagement.staticwebassets.endpoints.json
